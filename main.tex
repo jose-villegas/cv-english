@@ -5,8 +5,8 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{moderncviconsawesome}
 
 % moderncv themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -15,16 +15,14 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 \moderncvicons{awesome}
 
-\usepackage{multicol}
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
 % adjust the page margins
 \usepackage[scale=0.8,top=2cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-\renewcommand{\labelitemi}{\bullet}
 
 \newcommand*\hrefico[2]{%
   \href{#1}{#2}\,\raisebox{-1pt}{\footnotesize\faExternalLink}%
@@ -33,9 +31,9 @@
 % personal data
 \name{José}{Villegas}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{Los Rosales, Prado de Maria, Gran Colombia}{Caracas, Venezuela}{}
+\address{Barrio Bellas Artes, Region Metropolitana}{Santiago, Chile}{}
 %{* September 6th, 1992, Caracas (Venezuela)}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+58~(424)~157~1507}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+56~(9)~3094~4052}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{villegasjose.gg@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -61,41 +59,29 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace{-0.5cm}
-Game developer and graphics programmer, aiming to break through into the game industry and contribute on making great games with my skills, and expand upon them.
+Game developer and graphics programmer. Aiming to contribute on making great games with my skills, knowledge and experience. Interested in game mechanics, features development, tackling complex technical issues and learning more everyday. 
 
 \section{Technical Skills}
 \cvitem{Programming Languages}{C++, C\#, C, JavaScript.}
-\cvitem{Development Tools}{Git, SVN, Visual Studio, JIRA.}
-\cvitem{APIs, Libraries \& Game Engines}{Unity, OpenGL/GLSL, STL, WPF.}
+\cvitem{Development Tools}{Git, SVN, Visual Studio.}
+\cvitem{APIs, Libraries \& Game Engines}{Unity3D, OpenGL/GLSL, STL, WPF.}
 
 \section{Experience}
-\cventry{Nov. 2015--Nov. 2016}{Australia-Venezuela}{C\# Game Developer, Unity}{LearnSafari}{(Remote)}{Learn Safari is a educational game meant to teach children Spanish through different lessons with a variety of mini-games and narrative.
-\begin{itemize}
-\item Designed, implemented and optimized game logic and mechanics for minigames, progress saving and visual effects.
-\item Contributed on level design alongside artists and audio engineers to ease the integration of games onto scenes.
-\item Developed tools to speed up the inclusion of dialogue scripts into usable values and timings for synchronized text.
-\end{itemize}
-}
-\cventry{Apr. 2015--Aug. 2015}{Faculty of Sciences}{Game Development General Laboratory (Intern)}{Computer Graphics Center, UCV}{Caracas}{
-\begin{itemize}
-\item Wrote and researched theoretical and practical material for a general laboratory on game development with Unity.
-\item Made examples within Unity for game mechanics, visual effects, characters, objects and camera logic.
-\end{itemize}
-}
-\cventry{Mar. 2012--Jul. 2012}{Faculty of Sciences}{Teacher Assistant, Operative Systems}{Department of Computer Science, UCV}{Caracas, Prof. Robinson Rivas}{
-\begin{itemize}
-\item Taught the C programming language, memory allocation, system calls, parallel and concurrent programming. 
-\item Gave lectures on operative systems concepts, file systems, processes and system and shell commands.
-\end{itemize}
-}
+\subsection{Professional}
+\cventry{Jul. 2017--Current}{Chile}{Unity3D, C\# Programmer}{Gamaga, Ltd}{}{Programming for multiple games, specially Operate Now : Hospital, bug fixing and implementing heavy technical features or others for LiveOps games. Took a more leading role over time, assigning tasks for programmers, working on estimations and desired implementations and standards for the team.}
+\cventry{May. 2017--Jul. 2017}{USA-Venezuela}{C, C++ Programmer (Remote)}{NCH Software}{}{Maintaining, improving and adding functionalities over audio software and invoice management software.}
+\cventry{Nov. 2015--Nov. 2016}{Australia-Venezuela}{Unity3D, C\# Game Developer (Remote)}{LearnSafari}{}{Level design, game logic and mechanics development for the game Learn Safari. Learn Safari is a educational game meant to teach children Spanish through different lessons with many interactive games and narrative.}
+\subsection{Internship}
+\cventry{Apr. 2015--Aug. 2015}{Caracas, Venezuela}{Game Development General Laboratory}{UCV, Computer Graphics Center}{Prof. Esmitt Ramírez}{Writing, researching and developing theoretical and practical material for a general laboratory on game development using Unity3D.}
+\subsection{Vocational}
+\cventry{Mar. 2012--Jul. 2012}{Caracas, Venezuela}{Teacher Assistant, Operative Systems}{UCV, Faculty of Sciences}{Prof. Robinson Rivas}{Lecturing laboratories on operative system using the C programming language, system instructions and shell commands, use of threads and processes, file systems and parallel programming.}
 
 \section{Education}
-\cventry{2009--2016}{Faculty of Sciences}{Licentiate in Computer Science}{Central University of Venezuela (UCV)}{Caracas, Venezuela}{Major: Computer Graphics, Graduated with Honors}  % arguments 3 to 6 can be left empty
+\cventry{2009--2016}{Central University of Venezuela (UCV)}{Licentiate in Computer Science}{Caracas, Paseo Los Ilustres}{Graduated with Honors}{Major: Computer Graphics.}  % arguments 3 to 6 can be left empty
 \subsection{Academic Projects}
-\cventry{2016}{Central University of Venezuela, Faculty of Sciences}{\hrefico{https://www.youtube.com/watch?v=e1r5VrDtG7k}{Thesis: Voxel Shading and Cone Tracing for Global Illumination}}{Computer Graphics Center}{}{Supervisor: Prof. Esmitt Ram\'{i}rez. A real-time dynamic global illumination approach based on cone tracing for emissive, diffuse and specular surfaces utilizing voxel shading and compute shaders.}
-\cventry{2015}{Central University of Venezuela, Faculty of Sciences}{\hrefico{https://github.com/jose-villegas/TerrainRendering}{Multi-textured Terrain Generation and Rendering}}{Computer Graphics Center}{}{Randomly generated terrain with height based texture mapping, light-baking and dynamic level of detail.}
-\cventry{2015}{Central University of Venezuela, Faculty of Sciences}{\hrefico{https://github.com/jose-villegas/StyleTransferFunction}{Style Transfer Functions for Volume Rendering}}{Computer Graphics Center}{}{Bilinear transfer function editor and matcaps interpolation for cheap volume shading and non-realistic rendering.}
+\cventry{2016}{UCV}{\hrefico{https://www.youtube.com/watch?v=e1r5VrDtG7k}{Thesis: Voxel Shading and Cone Tracing for Global Illumination}}{Computer Graphics Center}{\textit{Faculty of Sciences, Computer Science Department}}{Supervisor: Prof. Esmitt Ram\'{i}rez\\ A real-time dynamic global illumination approach based on cone tracing for emissive, diffuse and specular surfaces utilizing voxel shading and compute shaders.}
+\cventry{2015}{UCV}{\hrefico{https://github.com/jose-villegas/TerrainRendering}{Multi-textured Terrain Generation and Rendering}}{Computer Graphics Center}{\textit{Faculty of Sciences, Computer Science Department}}{Randomly generated terrain with height based texture mapping. Incorporated light-baking and dynamic level of detail.}
+\cventry{2015}{UCV}{\hrefico{https://github.com/jose-villegas/StyleTransferFunction}{Style Transfer Functions for Volume Rendering}}{Computer Graphics Center}{\textit{Faculty of Sciences, Computer Science Department}}{Volume rendering with bilinear transfer functions and matcaps interpolation for cheap volume shading and non-realistic rendering.}
 % \cventry{2006--2009}{High School}{Nuestra Madre School}{Caracas, Paseo Los Ilustres}{\textit{High School Graduate}}{}
 %\cventry{year--year}{Degree}{Institution}{Street}{\textit{Grade}}{Description}
 
@@ -104,43 +90,20 @@ Game developer and graphics programmer, aiming to break through into the game in
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 
-\newpage
 \section{Languages}
-\setlength{\multicolsep}{0pt}% 50% of original values
-\begin{multicols}{2}
-\cvitemwithcomment{Spanish}{Native.}{}
-\columnbreak
-\cvitemwithcomment{English}{Professional working proficiency.}{}
-\end{multicols}
+\begin{tabular}{ p{.5\linewidth} p{.5\linewidth} }
+  \cvitemwithcomment{Spanish}{Native.}{} & \cvitemwithcomment{English}{Fluent.}{}
+\end{tabular}
 
 \section{Events \& Conferences}
-\cvitem{Global GameJam 2017, Caracas}{A 48 hours game jam global event. Collaborated in the game \hrefico{http://globalgamejam.org/2017/games/echo-switch}{"Echo Switch"} using Unity. Echo Switch is a co-op sidescroller where the players have to interchange abilities to complete levels and fight enemies.
-\begin{itemize}
-\item Implemented character movement, co-op features, mechanics, artificial intelligence, UI and visual effects.
-\end{itemize}
-}
-\cvitem{Global GameJam 2016, Caracas}{Collaborated in the game \hrefico{http://globalgamejam.org/2016/games/haunt}{"The Haunt"} using Unity. The Haunt is a tag-like game where the players start as werewolves, they have to find and touch a human to cure themselves and infect the human, the goal is to stay human as long as possible using the environment.
-\begin{itemize}
-\item Worked on level design, characters movement, multiplayer interactions and visual effects.
-\item Developed a system for level creation on a tight deadline with rooms resembling a pipe puzzle games.
-\end{itemize}
-}
-\cvitem{Global GameJam 2015, Caracas}{Collaborated in the game \hrefico{http://globalgamejam.org/2015/games/kidz-solution}{"Kidz Solution"} using Unity along with many teammates on different roles. In Kidz Solutions kids have to save adults from different enemies in a post-apocalyptic world.
-\begin{itemize}
-\item Contributed on the game concepts, designed and implemented the game interface and game mechanics.
-\item Implemented the artificial intelligence for a variety of enemies with different behaviors.
-\end{itemize}
-}
-\cvitem{5th JOINCIC 2012, Caracas}{A computer science conference with many talks and courses of different topics on computer science such as web development, game development, robotics, parallel computing, data processing, etc.}
-\cvitem{CEIDEC 2012 -  UCV GameDev Contest, Caracas}{A scientific research and development conference with a broad range of talks from different areas such as maths, physics, biology and computer science. Developed the game \hrefico{http://www.elchiguireliterario.com/2012/11/20/resumen-del-ucv-gamedev-contest-2012/}{"Hybris"} using Unity along with many teammates on different roles. Hybris is a god game where the player has to save humanity from imminent doom using different powers.
-\begin{itemize}
-\item Designed and implemented the game mechanics and the artificial intelligence for the bystanders.
-\end{itemize}
-}
+{\textit{\textbf{Caracas - Venezuela }}}\cvitem{| Global GameJam 2016}{A 48 hours game jam global event. Collaborated in the game \hrefico{http://globalgamejam.org/2016/games/haunt}{"The Haunt"} using Unity3D. I worked on the game design, level design, characters movement and interactions. The Haunt is a tag-like game, where the players start as werewolves and they have to find and touch a human to transform into humans, once they transform the objective is to stay human as long as possible using the environment.}
+{\textit{\textbf{Caracas - Venezuela }}}\cvitem{| Global GameJam 2015}{Collaborated in the game \hrefico{http://globalgamejam.org/2015/games/kidz-solution}{"Kidz Solution"} using Unity3D along with many teammates on different roles. I worked on the game concept, artificial intelligence, interface and game mechanics. In Kidz Solutions kids have to save adults from different enemies in a post-apocalyptic world.}
+{\textit{\textbf{Caracas - Venezuela }}}\cvitem{| 5th JOINCIC 2012}{A computer science conference with many talks and courses of different topics on computer science such as web development, game development, robotics, parallel computing, data processing, etc.}
+{\textit{\textbf{Caracas - Venezuela }}}\cvitem{| CEIDEC 2012 -  UCV GameDev Contest}{A scientific research and development conference with a broad range of talks from different areas such as maths, physics, biology and computer science. Developed the game \hrefico{http://www.elchiguireliterario.com/2012/11/20/resumen-del-ucv-gamedev-contest-2012/}{"Hybris"} using Unity3D along with many teammates on different roles for the GameDev Contest, I worked mostly on artificial intelligence and game mechanics. Hibris is a god game where the player has to save humanity from imminent doom using different powers.}
 
 \section{Hobbies \& Interests}
 \cvitem{Game Development}{The many challenges that appear developing a game and how to solve them, seeing your work in motion and learning about topics from other professional fields, designing game mechanics.}
-\cvitem{Gaming}{I enjoy playing video games, specially multiplayer games with friends, I don't play only for the fun but sometimes also to learn the game mechanics and deconstruct how some of them were implemented.}
+\cvitem{Gaming}{I enjoy playing video games either alone or with friends, I don't play only for the fun but sometimes also to learn the game mechanics and deconstruct how some of them were implemented.}
 \cvitem{Real Time Rendering}{Techniques to generate high quality computer graphics in real time, new hardware features, GPU computing, graphics APIs and new possibilities within the rendering pipeline.}
 
 
