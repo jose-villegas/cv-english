@@ -1,0 +1,15 @@
+Dear Wooga.
+
+After more than 5 years working on game development, specially almost 3 years at Gamaga, which is one of most important mobile gaming studios in Chile if not in South America, I feel ready to take on new challenges and adventures, thus the position of Game Developer at Wooga as advertised, is of my full interest. After having read the desired skills I feel that the knowledge I have fostered over years would make me an ideal candidate for the position.
+
+To tell a bit about myself I'm a computer science graduate, with an specialty in computer graphics, professionally I have been working on videogames for more than 5 years, though I have been making games much before that, GameJams during college, or brainstorming with friends for example. 
+
+Over the years I have gained strong knowledge of all stages of game development, giving support from the prototyping stage to getting the game on the store. In Gamaga for example I worked mostly on Operate Now: Hospital, a game with more than 30 million of downloads following a LiveOps process, always listening to user feedback, client requests and working on improving KPIs. 
+
+As a team player I was usually the programmer that took the most complex tasks because the producers knew I could get it done, eventually in Gamaga I took a more leading role in the Operate Now project, being the guy people ask questions about the code base of a project, splitting and breaking down complex tasks, proposing standards and optimal architectures for certain features, assigning tasks to others developers and myself. I have contributed to other projects in this company such as, Banana Kong, a infinite platformer with more than 100M downloads, Red Crimes Hidden Murders; a detective game focused on narrative, Holly's Home Design; which is a game about interior design currently in development and other games I cannot mention.
+
+As a programmer I look for good standards and well-thought architectures in base code. I strive for code that is scalable, optimized and understandable for other programmers. I like to take on complex issues, sketch code structures/systems architectures and listen to user feedback on the features we rollout. I love learning new things everyday specially from co-workers, new plugins, better or faster ways to do things.
+
+After having read your position I'm really interesting in taking part of the team, as Wooga being one of the top players in story-driven mobile games, love the focus on quality and the commitment to the players, the fact that Wooga has experts with Unity is also exciting as I would love to learn even more.
+
+Thanks for your consideration and time, hope to hear back.
