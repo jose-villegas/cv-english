@@ -8,6 +8,7 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \usepackage{moderncviconsawesome}
+\usepackage{tabularx}
 % moderncv themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -66,9 +67,17 @@ Software Engineer, BA in Computer Sciences with an speciality in Computer Graphi
 \cvitem{Development Tools}{Git, SVN, Visual Studio, Visual Studio Code, Resharper.}
 \cvitem{APIs, Libraries \& Game Engines}{Unity3D, OpenGL/GLSL, STL, WPF, NodeJS, Electron, Angular.}
 
+\section{Languages}
+\vspace*{-\baselineskip}
+\begin{tabularx}{\textwidth}{@{} XX}\\
+  \cvitemwithcomment{Spanish}{Native.}{} & \cvitemwithcomment{English}{Fluent.}{}
+\end{tabularx}
+
+\vspace*{-\baselineskip}
 \section{Experience}
 \subsection{Professional}
-\cventry{Jul. 2017--Current (2 yrs 5 mos)}{Santiago, Chile}{Unity3D, C\# Programmer}{Gamaga, Ltd}{}{Worked on multiple games, specially Operate Now : Hospital (LiveOps), implementing complex technical features, integrating new content, bug fixing, and developing external tools. Also learnt leading skills, assigning and splitting tasks for others programmers, working on estimations, desired implementations, optimal architectures and standards for the team.}
+\cventry{Mar. 2020--Present (2  mos)}{Santiago, Chile}{Unity3D, C\# Programmer}{Globant}{}{Worked with multiple clients for different software solutions using Unity, understanding many complex codebases and abstract ideas. Implemented part of the Unity front-end for casino slot machines for Aristocrat and its game development kit. Working on Facebook and VR using Occulus, creating a test suite.}
+\cventry{Jul. 2017--Mar. 2020 (2 yrs 9 mos)}{Santiago, Chile}{Unity3D, C\# Programmer}{Gamaga, Ltd}{}{Worked on multiple games, specially Operate Now : Hospital (LiveOps), implementing complex technical features, integrating new content, bug fixing, and developing external tools. Also learnt leading skills, assigning and splitting tasks for others programmers, working on estimations, desired implementations, optimal architectures and standards for the team.}
 \cventry{May. 2017--Jul. 2017 (3 mos)}{USA-Venezuela}{C, C++ Programmer (Remote)}{NCH Software}{}{Maintaining, improving and adding functionalities over audio and invoice management software.}
 \cventry{Nov. 2015--Nov. 2016 (1 yr 2 mos)}{Australia-Venezuela}{Unity3D, C\# Game Developer (Remote)}{LearnSafari}{}{Level design, game logic and mechanics development for the game Learn Safari from scratch. Learn Safari is a educational game meant to teach children Spanish through different lessons with many interactive games and narrative.}
 \subsection{Internship}
@@ -77,23 +86,14 @@ Software Engineer, BA in Computer Sciences with an speciality in Computer Graphi
 \cventry{Mar. 2012--Jul. 2012 (5 mos)}{Caracas, Venezuela}{Teacher Assistant, Operative Systems}{UCV, Faculty of Sciences}{Prof. Robinson Rivas}{Lecturing laboratories on operative system using the C programming language, system instructions and shell commands, use of threads and processes, file systems and parallel programming.}
 
 \section{Education}
-\cventry{2009--2016}{Central University of Venezuela (UCV)}{Licentiate in Computer Science}{Caracas, Paseo Los Ilustres}{Graduated with Honors}{Major: Computer Graphics.}  % arguments 3 to 6 can be left empty
-\subsection{Academic Projects}
-\cventry{2016}{UCV}{\hrefico{https://www.youtube.com/watch?v=e1r5VrDtG7k}{Thesis: Voxel Shading and Cone Tracing for Global Illumination}}{Computer Graphics Center}{\textit{Faculty of Sciences, Computer Science Department}}{Supervisor: Prof. Esmitt Ram\'{i}rez\\ A real-time dynamic global illumination approach based on cone tracing for emissive, diffuse and specular surfaces utilizing voxel shading and compute shaders.}
-\cventry{2015}{UCV}{\hrefico{https://github.com/jose-villegas/TerrainRendering}{Multi-textured Terrain Generation and Rendering}}{Computer Graphics Center}{\textit{Faculty of Sciences, Computer Science Department}}{Randomly generated terrain with height based texture mapping. Incorporated light-baking and dynamic level of detail.}
-\cventry{2015}{UCV}{\hrefico{https://github.com/jose-villegas/StyleTransferFunction}{Style Transfer Functions for Volume Rendering}}{Computer Graphics Center}{\textit{Faculty of Sciences, Computer Science Department}}{Volume rendering with bilinear transfer functions and matcaps interpolation for cheap volume shading and non-realistic rendering.}
+\cventry{2009--2016}{Central University of Venezuela (UCV)}{Licentiate Degree in Computer Science, Faculty of Sciences}{Caracas, Paseo Los Ilustres}{Graduated with Honors}{Minor: Computer Graphics.}  % arguments 3 to 6 can be left empty
 % \cventry{2006--2009}{High School}{Nuestra Madre School}{Caracas, Paseo Los Ilustres}{\textit{High School Graduate}}{}
 %\cventry{year--year}{Degree}{Institution}{Street}{\textit{Grade}}{Description}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
-
-\section{Languages}
-\begin{tabular}{ p{.5\linewidth} p{.5\linewidth} }
-  \cvitemwithcomment{Spanish}{Native.}{} & \cvitemwithcomment{English}{Fluent.}{}
-\end{tabular}
+\section{Master Thesis}
+\cvitem{}{\hrefico{https://www.youtube.com/watch?v=e1r5VrDtG7k}{\emph{Voxel Shading and Cone Tracing for Global Illumination}}}
+\cvitem{}{Prof. Esmitt Ram\'{i}rez, \textit{Faculty of Sciences, Computer Science Department, Computer Graphics Center}}
+\cvitem{}{A real-time dynamic global illumination approach based on cone tracing for emissive, diffuse and specular surfaces utilizing voxel shading and compute shaders. \hrefico{https://ieeexplore.ieee.org/document/7833375}{Per-review paper published for the 2016 XLII Latin American Computing Conference.}}
 
 \section{Events \& Conferences}
 {\textit{\textbf{Caracas - Venezuela }}}\cvitem{| Global GameJam 2016}{A 48 hours game jam global event. Collaborated in the game \hrefico{http://globalgamejam.org/2016/games/haunt}{"The Haunt"} using Unity3D. I worked on the game design, level design, characters movement and interactions. The Haunt is a tag-like game, where the players start as werewolves and they have to find and touch a human to transform into humans, once they transform the objective is to stay human as long as possible using the environment.}
@@ -103,8 +103,8 @@ Software Engineer, BA in Computer Sciences with an speciality in Computer Graphi
 
 \section{Hobbies \& Interests}
 \cvitem{TV / Animated Series}{I enjoy watching comedies, documentaries, mystery shows, comics, dramas, a bit of anime.}
-\cvitem{Gaming}{Of course I enjoy playing video games, mostly casual games on PC or Consoles, some mobile games too. I also sometimes like to learn the game mechanics and deconstruct or think how some of them were implemented. Working on games has kinda changed the experience of playing them.}
-\cvitem{Real Time Rendering}{Just reading about techniques to generate high quality computer graphics in real time, interesting shaders, GPU computing, graphics APIs and new possibilities within the rendering pipeline.}
+\cvitem{Gaming}{I work with gaming but of course I also enjoy playing video games, mostly casual games on PC or Consoles, some mobile games too. I also sometimes like to learn the game mechanics and deconstruct or think how some of them were implemented. Working on games has kinda changed the experience of playing them.}
+\cvitem{Science Journals}{Coming from a scientific background in college I enjoy dwelving in the latests news about science in general, specially computer graphics, artificial intelligence, physics and biology.}
 
 
 % Publications from a BibTeX file without multibib
