@@ -16,6 +16,17 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 \moderncvicons{awesome}
 
+% reduce inter-section vertical spacing
+\makeatletter
+\RenewDocumentCommand{\section}{sm}{%
+  \par\addvspace{2.2ex}%
+  \phantomsection{}%
+  \addcontentsline{toc}{section}{#2}%
+  \strut\sectionstyle{#2}%
+  {\color{color1}\hrule}%
+  \par\nobreak\addvspace{0.5ex}\@afterheading}
+\makeatother
+
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
@@ -60,23 +71,24 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-Game Developer, BA in Computer Science with a specialization in Computer Graphics. Expertise in gameplay, UI/UX \& graphics programming, iOS \& Android, efficient \& collaborative development pipelines.
+Game Developer, BA in Computer Science with a specialization in Computer Graphics. Core strengths include: gameplay, UI/UX \& graphics programming, breaking down tasks and creating an efficient \& collaborative development pipeline. Motivated and eager to learn from others and share my own experience.
 
 \section{Technical Skills}
 \cvitem{Languages}{C\#, C++, C, Shaders, JavaScript, Python, Objective-C, Java, Shell Script, HTML, CSS.}
 \cvitem{Tools}{Git, SVN, Rider, Xcode, Jira, Perforce, Github Actions, Notion, Jenkins, Figma, Firebase, AWS.}
 \cvitem{Tech Stack}{Unity3D, Addressables, Zenject, UniRX, UniTask, Unity DOTS, Timeline, SOLID, TDD.}
 
-\section{Languages}
-\vspace*{-\baselineskip}
-\begin{tabularx}{\textwidth}{@{} XXX}\\
-  \cvitemwithcomment{Spanish}{Native.}{} & \cvitemwithcomment{English}{Bilingual.}{}
-\end{tabularx}
-\vspace{0.2cm}
-
-\vspace*{-\baselineskip}
 \section{Experience}
 \subsection{Professional}
+% tighter spacing between job entries
+\renewcommand*{\cventry}[7][0.2em]{%
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%
+    {\bfseries #4} & {\bfseries #5} \\%
+    {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
+  \end{tabular*}%
+  \ifx&#7&%
+    \else{\\\vbox{\small#7}}\fi%
+  \par\addvspace{#1}}
 \cventry{Aug. 2025--Present (10 mos)}{Berlin, Germany (Hybrid)}{Senior Game Developer, C\# \& Unity3D}{Metacore}{}
 {\cvitem{}{
   \begin{itemize}
@@ -113,6 +125,7 @@ Game Developer, BA in Computer Science with a specialization in Computer Graphic
   }
 % Development of the game \emph{Learn Safari}. A educational game meant to teach children Spanish through different lessons with multiple interactive mini-games and a narrative story to follow. My first professional role implementing gameplay mechanics, graphics, UX/UI logic, quest systems and mini-games. Learnt many development paradigms.
 }
+\vspace{-1.5ex}
 \subsection{Internship}
 \cventry{Apr. 2015--Aug. 2015 (6 mos)}{Caracas, Venezuela (On-site)}{Game Development Laboratory Researcher}{UCV, Computer Graphics Center}{Prof. Esmitt Ramírez}{
   \cvitem{}{
@@ -121,6 +134,7 @@ Game Developer, BA in Computer Science with a specialization in Computer Graphic
       \end{itemize}
     }
 }
+\vspace{-1.5ex}
 \subsection{Vocational}
 \cventry{Mar. 2012--Jul. 2012 (6 mos)}{Caracas, Venezuela (On-site)}{Teacher Assistant, Operative Systems}{UCV, Faculty of Sciences}{Prof. Robinson Rivas}
 { \cvitem{}{
@@ -135,6 +149,13 @@ Game Developer, BA in Computer Science with a specialization in Computer Graphic
 \cventry{2009--2016}{Central University of Venezuela (UCV)}{Licentiate Degree in Computer Science, Faculty of Sciences}{Caracas, Paseo Los Ilustres}{Graduated with Honors}{Specialization: Computer Graphics.}  % arguments 3 to 6 can be left empty
 % \cventry{2006--2009}{High School}{Nuestra Madre School}{Caracas, Paseo Los Ilustres}{\textit{High School Graduate}}{}
 %\cventry{year--year}{Degree}{Institution}{Street}{\textit{Grade}}{Description}
+
+\section{Languages}
+\vspace*{-\baselineskip}
+\begin{tabularx}{\textwidth}{@{} XXX}\\
+  \cvitemwithcomment{Spanish}{Native.}{} & \cvitemwithcomment{English}{Bilingual.}{}
+\end{tabularx}
+\vspace{0.2cm}
 
 \newpage
 \section{Publications}
