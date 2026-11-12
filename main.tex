@@ -15,6 +15,7 @@
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 \moderncvicons{awesome}
+\patchcmd{\maketitle}{0.8\textwidth}{\textwidth}{}{}  % header links on one line need the full width
 
 % reduce inter-section vertical spacing
 \makeatletter
@@ -49,8 +50,7 @@
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{villegasjose.gg@gmail.com}                   % optional, remove / comment the line if not wanted
-\homepage{\httplink[jose-villegas.github.io]{jose-villegas.github.io/?utm_source=CV&utm_medium=Curriculum&utm_campaign=Gather&utm_id=Social}}                  % optional, remove / comment the line if not wanted
-\extrainfo{\githubsocialsymbol\httplink{github.com/jose-villegas}\maketitlesymbol\linkedinsocialsymbol \httplink{www.linkedin.com/in/villegasjose}}
+\extrainfo{\githubsocialsymbol\httplink{github.com/jose-villegas}\maketitlesymbol\homepagesymbol\httplink[jose-villegas.github.io]{jose-villegas.github.io/?utm_source=CV&utm_medium=Curriculum&utm_campaign=Gather&utm_id=Social}\maketitlesymbol\linkedinsocialsymbol \httplink[linkedin.com/in/villegasjose]{www.linkedin.com/in/villegasjose}}
 
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
